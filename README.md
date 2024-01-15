@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+## About
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple todo app built with MightyMeld and TailwindCSS
 
-Currently, two official plugins are available:
+## Editing the app with MightyMeld
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Run `npm install` to install dependencies.
 
-## Expanding the ESLint configuration
+2. Download a mightymeld.secrets file from the [MightyMeld Portal](https://mightymeld.app/instances) and place it in your project root 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. Run `npx mightymeld` to launch MightyMeld studio in a browser tab.
 
-- Configure the top-level `parserOptions` property like this:
+## Running the app without MightyMeld
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. Type `npm install` to install dependencies.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Run `npm run dev`, the app should then appear in a browser tab on [localhost:5173](localhost:5173)
